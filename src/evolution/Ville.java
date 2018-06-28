@@ -7,7 +7,7 @@ public class Ville {
 	
 	private byte id;
 	private String nom;
-	private List<Batiment> listeBatiments;
+	private List<Batiment> listeBatiments = new ArrayList<Batiment>();
 	private String etat;
 	
 	public Ville(byte tmpId, String tmpNom) {

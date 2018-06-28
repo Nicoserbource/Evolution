@@ -7,7 +7,7 @@ public class Secteur {
 	
 	private byte id;
 	private String nom;
-	private List<Ville> listeVilles;
+	private List<Ville> listeVilles = new ArrayList<Ville>();
 	
 	public Secteur(byte tmpId, String tmpNom) {
 		id = tmpId;

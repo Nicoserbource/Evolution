@@ -16,10 +16,12 @@ public class Joueur extends Personnage {
 	}
 	
 	public static void afficherStats(Joueur pj) {
+		System.out.println();
 		System.out.println("Nom : "+pj.nom);
 		System.out.println("Points d'attaque : "+pj.attaque);
 		System.out.println("Points de vie : "+pj.vie);
 		System.out.println("Puissance : "+pj.puissance);
+		System.out.println();
 	}
 
 	public String getNom() {

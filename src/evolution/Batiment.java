@@ -9,18 +9,16 @@ public class Batiment {
 	private String nom;
 	private Ressource ressource;
 	private String description;
-	private List<Mechant> listeMechants;
+	private List<Mechant> listeMechants = new ArrayList<Mechant>();
 	byte stock;
-	byte vie;
 	
-	public Batiment(byte tmpId, String tmpNom, Ressource tmpRessource, byte tmpStock, byte tmpVie) {
+	public Batiment(byte tmpId, String tmpNom, Ressource tmpRessource, byte tmpStock) {
 		id = tmpId;
 		nom = tmpNom;
 		ressource = tmpRessource;
 		description = null;
 		List<Mechant> listeMechants = new ArrayList<Mechant> ();
 		stock = tmpStock;
-		vie = tmpVie;
 	}
 
 	public byte getId() {
@@ -69,14 +67,6 @@ public class Batiment {
 
 	public void setStock(byte tmpStock) {
 		stock = tmpStock;
-	}
-
-	public byte getVie() {
-		return vie;
-	}
-
-	public void setVie(byte tmpVie) {
-		vie = tmpVie;
 	}
 	
 }
